@@ -14,17 +14,17 @@ export type Property = {
 };
 function App() {
     const data: Property = {
-        imageAlt: "Hotel del Paine",
+        imageAlt: "View from Hotel del Paine",
         imageUrl: "/assets/20230211_070702_small.jpg",
         beds: 3,
         baths: 2,
-        title: "",
+        title: "Remote hotel in Torres del Paine surrounded by beautiful mountains",
         price: 13.99,
         reviewCount: 149,
         rating: 4,
     };
     return (
-        <div className="flex min-h-screen items-center justify-center bg-gray-200 p-8">
+        <div className="flex min-h-screen items-center justify-center bg-gray-200 p-8 text-gray-900 antialiased">
             <PropertyCard property={data} />
         </div>
     );
